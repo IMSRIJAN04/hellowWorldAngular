@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular World';
+  
+  viewMode ='List';
+
+  courses = [
+    {id:1, name:'course1'},
+    {id:2, name:'course2'},
+    {id:3, name:'course3'}
+];
 }
+

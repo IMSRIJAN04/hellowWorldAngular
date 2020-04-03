@@ -13,11 +13,7 @@ import { Component, OnInit } from '@angular/core';
   </div>
   ` ,
   styles: [` 
-  div {
-  color : red;
-  text-align : center;
-  font-size :2em;
-  }
+  
   `]
 })
 export class TestComponent implements OnInit {
