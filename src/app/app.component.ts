@@ -2,28 +2,26 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template:`
+  
+
+  
+   <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+
+  `, 
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'Angular World';
-  
-  viewMode ='List';
-
-  courses = [
-    {id:1, name:'course1'},
-    {id:2, name:'course2'},
-    {id:3, name:'course3'}
-];
-onAdd() {
-  this.courses.push({id:4,name:'course4'});
-
-}
-onChange(course) {
-  course.name='updated';
+  email = "srijan@gmail.com";
+  onKeyUp() {
+    console.log(this.email);
+  }
   
 
-}
+  
+
+
 
 }
 
