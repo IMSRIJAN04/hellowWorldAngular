@@ -19,6 +19,11 @@ onAdd() {
   this.courses.push({id:4,name:'course4'});
 
 }
+onChange(course) {
+  course.name='updated';
+  
+
+}
 
 }
 
