@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GithubProfileComponent } from './github-profile/github-profile.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { GithubFollowersComponent } from './github-followers/github-followers.co
     NavbarComponent,
     HomeComponent,
     GithubProfileComponent,
-    GithubFollowersComponent
+    GithubFollowersComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
