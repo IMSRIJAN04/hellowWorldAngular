@@ -6,19 +6,41 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { GithubProfileComponent } from './github-profile/github-profile.component';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    GithubProfileComponent,
+    GithubFollowersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot()
+    RouterModule.forRoot([
+      { 
+        path: '',
+       component: HomeComponent
+      },
+
+      {
+         path: 'followers', 
+         component: GithubFollowersComponent
+      },
+
+      { 
+        path: 'profile/:username', 
+        component: GithubProfileComponent
+      },
+
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
